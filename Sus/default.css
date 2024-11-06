@@ -1,0 +1,9 @@
+p{color: aqua;}
+p{font-size: 16px; 
+    word-wrap: break-word;}
+    .p {content: '';
+    display: inline-block;
+    background-color: black;
+    box-shadow: 2px 20px 60px black;
+    padding: 2px 20px; 
+    margin: 0 2px;}

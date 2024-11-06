@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yêu cầu về Nghành Kĩ Thuật Hóa Học</title>
+    <style>
+        @import url(css.css);
+    </style>
+<style>
+    body {
+          background-image: url(fuss.jpg);
+          background-repeat:no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+</style>
+</head>
+<body>
+    <h1 style="color: red;"> những yêu cầu về nghành kĩ thuật hóa học</h1>
+    <h2 style="color: red;">nghành kĩ thuật hóa học không hề là một nghành đơn giản,để có thể thăng tiến và trụ lại trong nghành ta luôn phải có những tiêu chuẩn cả về kiến thức cả về kĩ năng</h2>
+    <h3 style="color: cornflowerblue;"> Kiến thức nền tảng vững chắc</h3>
+    <div id="result">
+        <select id="mySelect">
+            <option value="1">Toán học</option>
+            <option value="2">Vật lý</option>
+            <option value="3">Hóa học </option>
+            <option value="4">Kỹ thuật </option>
+          </select>
+        
+          <div id="result-card"></div>
+          <h3 style="color: cornflowerblue;"> Kỹ năng chuyên môn</h3>
+      </div>
+      <div id="card">
+        <select id="chondi">
+            <option value="a">Phân tích và giải quyết vấn đề</option>
+            <option value="b">Kỹ sư</option>
+            <option value="c">Mô phỏng </option>
+            <option value="d">Thực nghiệm</option>
+          </select>
+
+          <div id="card-result"></div>
+    <h2 style="color: red;"> Tại sao những yêu cầu này lại quan trọng?</h2>
+    <ul style="list-style-type: square;">
+     <li><strong>Giải quyết vấn đề phức tạp:</strong> Các vấn đề trong ngành Kỹ thuật Hóa học thường rất phức tạp và đòi hỏi sự kết hợp nhiều kiến thức khác nhau.</li>
+     <li><strong>Đổi mới sáng tạo:</strong>Ngành Kỹ thuật Hóa học luôn đòi hỏi sự đổi mới để đáp ứng nhu cầu ngày càng cao của xã hội.</li>
+     <li><strong>Làm việc trong môi trường năng động:</strong>Kỹ sư hóa học thường làm việc trong môi trường sản xuất, nơi có nhiều thay đổi và yêu cầu cao về hiệu quả</li>
+      </ul>
+      <a href="https://quakeronamortalenemy.github.io/12T//dacdiem.html"><img src="dacdiem.jpg" height="15%" width="15%"></a>
+      <a href="https://quakeronamortalenemy.github.io/12T//12T.html"><img src="mainpage.jpg" height="12%" width="12%"></a>
+      <script>
+        const selectElement = document.getElementById('mySelect');
+    const resultDisplay = document.getElementById('result-card');
+
+    selectElement.addEventListener('change', () => {
+        const selectedValue = selectElement.value;
+
+        switch (selectedValue) {
+            case '1':
+                resultDisplay.textContent = 'Các kiến thức về đại số, giải tích, xác suất thống kê.';
+                break;
+            case '2':
+                resultDisplay.textContent = 'các nguyên lý vật lý cơ bản như nhiệt động lực học, cơ học chất lưu xảy ra trong các thiết bị hóa học.';
+                break;
+            case '3':
+                resultDisplay.textContent = 'Kiến thức về hóa học vô cơ, hữu cơ, hóa sinh và các phản ứng hóa học.';
+                break;
+            case '4':
+                resultDisplay.textContent = 'Các kiến thức về kỹ thuật hóa học, kỹ thuật máy, kỹ thuật điều khiển và công cụ thí nghiệm,phòng thí nghiệm.';
+                break;
+            default:
+                resultDisplay.textContent = ' select an option.';
+        }
+    });
+
+  const selectElement2 = document.getElementById('chondi');
+    const resultDisplay2 = document.getElementById('card-result');
+
+    selectElement2.addEventListener('change', () => {
+        const selectedValue2 = selectElement2.value;
+
+        switch (selectedValue2) {
+            case 'a':
+                resultDisplay2.textContent = 'Kỹ sư hóa học thường xuyên đối mặt với những vấn đề phức tạp liên quan đến quá trình sản xuất, hiệu suất, chất lượng sản phẩm và bảo vệ môi trường,.';
+                break;
+            case 'b':
+                resultDisplay2.textContent = ' Thiết kế là một khâu vô cùng quan trọng, bao gồm thiết kế các thiết bị, quy trình sản xuất ví dụ như biểu đồ, phương trình hóa học,etc....';
+                break;
+            case 'c':
+                resultDisplay2.textContent = 'Mô phỏng được sử dụng để dự đoán hiệu suất của các thiết bị và quy trình trước khi xây dựng thực tế, giúp giảm thiểu rủi ro và tối ưu hóa quá trình ví dụ như sử dụng "thần chú" "Khi nào cần may áo giáp sắt nhớ sang phố hỏi cửa hàng áo phi âu" để xác định kim loại dễ gay cháy nổ.';
+                break;
+            case 'd':
+                resultDisplay2.textContent = 'Thực nghiệm được sử dụng để kiểm chứng các giả thuyết, thu thập dữ liệu và đánh giá hiệu quả của các thiết kế ví dụ như việc ta không hề biết lượng dunh dịch là Saccarose(C12H22O11) ngon miệng hay một đống Brôm chết người nếu không thử AgNo3/NH3  .';
+                break;
+            default:
+                resultDisplay2.textContent = 'Please select an option.';
+        }
+    });
+            </script>
+<br>
+
+     
+      
+</body>
+</html>
