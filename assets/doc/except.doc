@@ -1,0 +1,73 @@
+<script>
+        function handleSelectChange() {
+          const selectElement = document.getElementById('card');
+          const selectedValue = selectElement.value;   
+      
+      
+          const resultDisplay = document.getElementById('chondi');
+          switch (selectedValue) {
+            case 'a':
+              resultDisplay.textContent = 'This is option 1.';
+              break;
+            case 'b':
+              resultDisplay.textContent = 'This is option 2.';
+              break;
+            case 'c':
+              resultDisplay.textContent = 'This is option 3.';
+              break;
+              case 'd':
+              resultDisplay.textContent = 'This is option 3.';
+            default:
+              resultDisplay.textContent = 'Please select an option.';
+          }
+        }
+      
+        const selectElement2 = document.getElementById('card');
+        selectElement2.addEventListener('change', handleSelectChange);
+      </script>
+const selectElement = document.getElementById('mySelect');
+      const resultDisplay = document.getElementById('result');
+    
+      selectElement.addEventListener('change', () => {
+        const selectedValue = selectElement.value;
+    
+        switch (selectedValue) {
+          case '1':
+            resultDisplay.textContent = ' Các kiến thức về đại số, giải tích, xác suất thống kê.';
+            break;
+          case '2':
+            resultDisplay.textContent = 'các nguyên lý vật lý cơ bản như nhiệt động lực học, cơ học chất lưu xảy ra trong các thiết bị hóa học.';
+            break;
+          case '3':
+            resultDisplay.textContent = 'Kiến thức về hóa học vô cơ, hữu cơ, hóa sinh và các phản ứng hóa học.';
+            break;
+            case '4':
+            resultDisplay.textContent = 'Các kiến thức về kỹ thuật hóa học, kỹ thuật máy, kỹ thuật điều khiển và công cụ thí nghiệm,phòng thí nghiệm.';
+          default:
+            resultDisplay.textContent = 'Please select an option.';
+        }
+      });
+    
+      const selectElement2 = document.getElementById('card');
+    const resultDisplay2 = document.getElementById('chondi');
+
+    selectElement2.addEventListener('change', () => {
+      const selectedValue2 = selectElement2.value;
+
+      switch (selectedValue2) {
+        case 'a':
+          resultDisplay2.textContent = 'You selected A.';
+          break;
+        case 'b':
+          resultDisplay2.textContent = 'You selected B.';
+          break;
+        case 'c':
+          resultDisplay2.textContent = 'You selected C.';
+          break;
+          case 'd':
+          resultDisplay2.textContent = 'You selected D.';
+         break;
+        default:
+          resultDisplay2.textContent = ' select an option.';
+      }
+    });
