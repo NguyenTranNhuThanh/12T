@@ -4,19 +4,19 @@ const resultDiv = document.getElementById('result');
 const results = [
   {
     text: " Năng lượng tái tạo - Tương lai xanh của nhân loại",
-    image: "/assets/images/drone.jpg"
+    image: "/12T/assets/images/drone.jpg"
   },
   {
     text: "Dược phẩm và y tế - Cải thiện chất lượng cuộc sống",
-    image: "/assets/images/hospital.jpg"
+    image: "/12T/assets/images/hospital.jpg"
   },
   {
     text: "Vật liệu Nano - Tương lai của Công nghiệp",
-    image: "/assets/images/nano.png"
+    image: "/12T/assets/images/nano.png"
   },
   {
     text: "Công nghệ thực phẩm - Đáp ứng nhu cầu của người tiêu dùng",
-    image: "/assets/images/food.jpg"
+    image: "/12T/assets/images/food.jpg"
   },
   
 ];
